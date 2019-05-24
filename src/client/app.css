@@ -1,8 +1,56 @@
-h1 {
-  color: green;
-}
-
 body {
   text-align: center;
   margin: auto;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px 10%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+
+}
+
+.App h1 {
+  font-size: 6em;
+  color: white;
+  margin: 50px 0;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu .button  {
+  font-weight: bold;
+  width: 200px;
+  height: 60px;
+  position: relative;
+  padding: 18px 10px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  cursor: pointer;
+  background: #C0C0C0;
+  -webkit-box-shadow: 3px 0px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 0px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.Menu .button:before {
+  content: "";
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #C0C0C0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
 }
